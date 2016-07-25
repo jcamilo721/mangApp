@@ -1,7 +1,7 @@
 {
   "name": "MangApp",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A starter project for AngularJS",
   "repository": "https://github.com/jcamilo721/mangApp",
   "license": "MIT",
@@ -19,5 +19,9 @@
     "postinstall": "bower install",
     "prestart": "npm install",
     "start": "lite-server"
+  },
+  "engines": {
+    "node": "4.4.4",
+    "npm": "2.15.x"
   }
 }
