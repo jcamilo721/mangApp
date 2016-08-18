@@ -37,13 +37,14 @@
   },
   "dependencies": {
     "bower": "^1.7.9",
+    "foobar": "1.1.0",
     "grunt": "^0.4.5",
-    "grunt-contrib-clean": "^0.6.0",
     "grunt-cli": "^1.2.0",
-    "grunt-html2js": "^0.2.9",
+    "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-wiredep": "^2.0.0",
-    "grunt-include-source": "^0.7.1"
+    "grunt-html2js": "^0.2.9",
+    "grunt-include-source": "^0.7.1",
+    "grunt-wiredep": "^2.0.0"
   },
   "keywords": [
     "AngularJS",
