@@ -1,8 +1,8 @@
 {
-  "name": "MangApp",
+  "name": "mangapp",
   "private": true,
   "version": "1.0.0",
-  "description": "A starter project for AngularJS",
+  "description": "An AngularJS project",
   "repository": "https://github.com/jcamilo721/mangApp",
   "license": "MIT",
   "devDependencies": {
