@@ -37,6 +37,7 @@
     "doc": "docs"
   },
   "dependencies": {
+    "dev": "lite-server",
     "bower": "^1.7.9",
     "foobar": "1.1.0",
     "grunt": "^0.4.5",
