@@ -16,7 +16,7 @@
     "grunt-html2js": "~0.2.9",
     "grunt-include-source": "0.7.x",
     "grunt-wiredep": "2.x",
-    "lite-server": "^2.2.0"
+    "lite-server": "^2.2.2"
   },
   "scripts": {
     "postinstall": "bower install",
