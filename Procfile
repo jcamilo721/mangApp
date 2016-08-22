@@ -1,1 +1,1 @@
-web: node /node_modules/lite-server/index.js
+web: node ./node_modules/lite-server/index.js
