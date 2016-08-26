@@ -2,11 +2,12 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
+  <link rel="shorcut icon" type="image/x-icon" href="src\img\JC black.ico">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
+  <title>JC</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -15,12 +16,16 @@
 
   <!-- include: "type": "css", "files": "css/**/*.css, resources/**/*.css, components/**/*.css, modules/**/*.css" -->
   <link href="css/app.css" rel="stylesheet" type="text/css">
+  <link href="css/gallery.css" rel="stylesheet" type="text/css">
   <!-- /include -->
 </head>
 <body>
+  <div ng-app="myApp">
   <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
+    <li><a class="jcb" href="#/"><img href="src\img\jc.png" width="40"></a></li>
+    <li><a class="jcb" href="#/gallery">Gallery</a></li>
+    <li><a class="jcb" href="#/view2">view2</a></li>
+    <li><a class="jcb" href="#/comicView">Comics</a></li>
   </ul>
 
   <!--[if lt IE 7]>
@@ -30,6 +35,7 @@
   <div ng-view></div>
 
   <div>Angular seed app: v<span app-version></span></div>
+  </div> <!--end myApp-->
 
   <!-- bower:js -->
   <script src="lib/angular/angular.js"></script>
@@ -41,7 +47,8 @@
   <script src="components/version/interpolate-filter.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/version.js"></script>
-  <script src="modules/view1/view1.js"></script>
+  <script src="modules/comicView/comicView.js"></script>
+  <script src="modules/galleryView/galleryView.js"></script>
   <script src="modules/view2/view2.js"></script>
   <!-- /include -->
 </body>

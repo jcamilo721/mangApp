@@ -1,0 +1,10 @@
+  <h1>JC</h1>
+    <div ng-controller="comicCtrl">
+      <li ng-repeat="comic in comics">
+      <img ng-src="https://cdn.mangaeden.com/mangasimg/{{comic.im}}" alt="{{comic.t}}" />
+      {{comic.t}}
+          <a href="#!/comics/{{comic.t}}" class="thumb">
+            <img ng-src="https://cdn.mangaeden.com/mangasimg/{{comic.im}}" alt="{{comic.t}}" />
+      	   </a>
+      </li> 
+    </div>
