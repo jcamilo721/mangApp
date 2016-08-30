@@ -25,6 +25,7 @@ angular.module('myApp.gallery', ['ngRoute'])
   photos.success(function(data) {
     $scope.photos = data;
   });
+  
 }])
 
 .controller('galleryDetailsCtrl', ['$scope', 'photoDetails', '$routeParams', function($scope, photos, $routeParams) {
