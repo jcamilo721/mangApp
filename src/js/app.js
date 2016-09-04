@@ -4,8 +4,8 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.gallery',
-  'myApp.view2',
-  'myApp.comicView',
+  'myApp.movies',
+  'myApp.comics',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
@@ -14,11 +14,12 @@ config(['$routeProvider', function($routeProvider) {
   	.when("/gallery", {
         templateUrl : "modules/galleryView/galleryView.html"
     })
-    .when("/view2", {
-        templateUrl : "modules/view2/view2.html"
+    .when("/movies", {
+        templateUrl : "modules/movieView/movieView.html"
     })
-    .when("/comicView", {
+    .when("/comics", {
         templateUrl : "modules/comicView/comicView.html"
     })
-  	.otherwise({redirectTo: '/comicView'});
+  	.otherwise({redirectTo: '/comics'});
 }]);
+

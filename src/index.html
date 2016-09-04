@@ -17,15 +17,16 @@
   <!-- include: "type": "css", "files": "css/**/*.css, resources/**/*.css, components/**/*.css, modules/**/*.css" -->
   <link href="css/app.css" rel="stylesheet" type="text/css">
   <link href="css/gallery.css" rel="stylesheet" type="text/css">
+  <link href="css/movies.css" rel="stylesheet" type="text/css">
   <!-- /include -->
 </head>
 <body>
   <div ng-app="myApp">
   <ul class="menu">
-    <li><a class="jcb" href="#/"><img href="src\img\jc.png" width="40"></a></li>
+    <!--<li><a class="jcb" href="#/"><img href="src\img\jc.png" width="40"></a></li>-->
     <li><a class="jcb" href="#/gallery">Gallery</a></li>
-    <li><a class="jcb" href="#/view2">view2</a></li>
-    <li><a class="jcb" href="#/comicView">Comics</a></li>
+    <li><a class="jcb" href="#/movies">Movies</a></li>
+    <li><a class="jcb" href="#/comics">Comics</a></li>
   </ul>
 
   <!--[if lt IE 7]>
@@ -34,7 +35,7 @@
 
   <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
+  <!-- <div>My Angular Application version: <span app-version></span></div> -->
   </div> <!--end myApp-->
 
   <!-- bower:js -->
@@ -49,7 +50,7 @@
   <script src="components/version/version.js"></script>
   <script src="modules/comicView/comicView.js"></script>
   <script src="modules/galleryView/galleryView.js"></script>
-  <script src="modules/view2/view2.js"></script>
+  <script src="modules/movieView/movieView.js"></script>
   <!-- /include -->
 </body>
 </html>

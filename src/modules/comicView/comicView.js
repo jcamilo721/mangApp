@@ -12,7 +12,7 @@ angular.module('myApp.comicView', ['ngRoute'])
 
  'use strict';
 
-angular.module('myApp.comicView', ['ngRoute'])
+angular.module('myApp.comics', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -39,7 +39,7 @@ angular.module('myApp.comicView', ['ngRoute'])
 }])*/
 
 .factory('comicDetails', ['$http', function($http) {
-  return $http.get('https://www.mangaeden.com/api/list/0/?p=0&l=25')
+  return $http.get('https://www.mangaeden.com/api/manga/4e70e9f6c092255ef7004336/')
          .success(function(data) {
            return data;
          })
@@ -47,3 +47,4 @@ angular.module('myApp.comicView', ['ngRoute'])
            return data;
          });
 }]);
+
